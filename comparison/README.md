@@ -1,0 +1,3 @@
+## Code Coverage
+
+The rice and comparison tools (clozemaster, kitten, and rustsmith) each generated approximately 30,000 test cases. I have placed the respective Rust compiler code coverage files in this directory. To obtain code coverage data, modifications to the Rust compiler source code are required. For specific steps, please refer to the [Stack Overflow discussion](https://stackoverflow.com/questions/79112200/how-to-collect-code-coverage-for-the-rustc-compiler-itself).

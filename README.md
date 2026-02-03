@@ -8,9 +8,11 @@ RICE is an LLM-assisted testing framework for the Rust compiler designed to unco
 The directory structure of the BridgeRouter project is as follows:
 ```
 RICE/  
-├── dataset/          # Historical ICE issue reports
-├── src/              # Code of RICE  
-├── .env.exmaple      # Environmental variable config
+|—— comparison/       # Comparative experimental data
+|—— dataset/          # Historical ICE issue reports
+|—— src/              # Code of RICE
+|—— zero_days/        # 0day ices  
+|—— .env.exmaple      # Environmental variable config
 └── README.md         # This documentation  
 ```
 
@@ -32,7 +34,5 @@ cd src
 python3 main.py ../dataset/history_ices/issue_128249.md
 ```
 3. The tool's runtime logs and the code that triggers ICEs will be saved in the `output` directory.
-
->You can collect historical ICE issues from the Rust GitHub repository to expand the dataset, but please organize them according to the example format we provide.
 
 During execution, this tool will locally build a Rust compiler for a specific commit. For details, please refer to: [rustc quick start](https://rustc-dev-guide.rust-lang.org/building/quickstart.html)
