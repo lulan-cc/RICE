@@ -1,4 +1,4 @@
-// affected versions: 1.87-1.95
+//case1 - affected versions: 1.87-1.95
 #![feature(adt_const_params, generic_const_parameter_types)]
 #![expect(incomplete_features)]
 #[derive(PartialEq)]
